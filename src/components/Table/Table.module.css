@@ -1,0 +1,67 @@
+thead > tr:not(:first-child) {
+  background-color: #efefef;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 90%;
+  margin: 0 auto;
+}
+
+table {
+  color: #7c7c7c;
+  width: 100%;
+  border: 1px solid #cabeba;
+  overflow-x: auto;
+}
+
+tr:first-child {
+  border: 1px solid #cabeba;
+}
+
+th {
+  border-right: 1px solid #cabeba;
+}
+
+tbody > tr, th, td {
+  border-bottom: none !important;
+}
+
+td {
+  border-right: 1px solid #cabeba;
+  border-collapse: collapse;
+}
+
+td,th {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+thead {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: .7rem;
+  border-radius: 10px;
+  background-color: #2c2c2c;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #4c4c4c, #fcfcfc);
+  border-radius: 10px;
+  transition: all 4s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #fcfcfc, #4c4c4c);
+}
